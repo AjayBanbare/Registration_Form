@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script id="form" text="text/x-handlebars-template">
+            <div class="main">
+                <h2>
+                    Thank you {{Name}} for filling the registration form. 
+                    Our Team will Contact you for next process.
+                    Check your details
+                </h2>
+                
+                <h3>
+                    <p>Your Name is : {{Name}}</p>
+
+                    <p>Your Address is : {{Address}}</p>
+
+                    <p>Your Aadhar number is : {{Aadhar}}</p>
+
+                    <p>your Pan number is : {{Pan}}</p>
+
+                    <p> Your Mobile number is: {{Mobile}}</p>
+                </h3>
+
+                <h2> THANK YOU! </h2>
+                
+            </div>
+    </script>
+</head> 
+    <body>
+        
+        <div class="header">
+               <h1>Registration Page</h1>
+        </div>
+            <br>
+            <br>
+                
+             <div class="form">
+                    <p>Your Name  </p>
+                    <input type="text"  id="name">
+                    <br>
+               
+                    <p>Address  </p>
+                    <textarea id="address" ></textarea>
+                    <br>
+               
+                    <p>Aadhar Number </p>
+                    <input type="text" id="aadhar">
+                    <br>
+                
+                    <p>Pan Number </p>
+                    <input type="text" id="pan">
+                    <br>
+                
+                    <p>Mobile Number </p>
+                    <input type="text" id="mobile">
+            </div>
+                    <br>
+                     <div class="button">
+                        <button id="submit"><strong>Submit</strong></button>
+                    </div>
+                    <div id="msg"></div>
+
+                    <h1 id="greeting"></h1>
+
+
+         <script src = "form.js"></script>  
+      
+    </body>
+</html>
